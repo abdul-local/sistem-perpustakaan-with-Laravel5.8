@@ -10,5 +10,10 @@
 'role' => \Spatie\Permission\Middlewares\RoleMiddleware::class,
     'permission' => \Spatie\Permission\Middlewares\PermissionMiddleware::class,
     'role_or_permission' => \Spatie\Permission\Middlewares\RoleOrPermissionMiddleware::class
+9. untuk mempermudah kodingan kita install debug dari laravel dengan printah
+composer require barryvdh/laravel-debugbar --dev
+# Menyiapkan template 
+1. bisa download di https://github.com/ColorlibHQ/AdminLTE/releases/tag/v2.4.13
+2. kemudian gunakan helper asset untuk akses bahahan yg di butuhkan
 
 
