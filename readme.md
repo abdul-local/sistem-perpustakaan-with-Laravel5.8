@@ -27,6 +27,13 @@ composer require barryvdh/laravel-debugbar --dev
 4. masuk ke controller untuk register di atur lagi dan sebelum di create datanya di sudahakan di tampung dulu kedalam sebuah varibel
 5. Gunakan printah assignRole
 6. setelah itu tambahkan untuk hashRole nya di Model
+# Membuat User admin
+1. gunakan printah php artisan make:seeder AdminUserSeeder
+2. gunakan printah php artisan db:seed --class=AdminUserSeeder
+3. Sebelum menjalankan printah no 2 pastikan untuk di seed itu buat isi dulu table yang akan di buat dan juga jagan lupa untuk assignRole kasih nama admin.
+4. setelah itu jalankan printah no 2 
+5. setalah itu atur untuk Login controller nya artinya tambahkan methd baru,
+ketika di jalankan yang di gunakan untuk redirect ke halaman admin page dan jangan lupa untuk routenya atur ke halaman adminnya biar ketika user login dengan role admin langsung di direct ke page admin
 
 
 
