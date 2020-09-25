@@ -11,9 +11,17 @@
 |
 */
 
+// Route::get('/', function () {
+//     return view('admin/template/default');
+// });
 Route::get('/', function () {
-    return view('admin/template/default');
+    return view('welcome');
 });
+
 Route::get('/user',function(){
     return view('admin/template/user/index');
 });
+
+Auth::routes(['verify'=>true]);
+
+Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');

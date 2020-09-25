@@ -15,5 +15,10 @@ composer require barryvdh/laravel-debugbar --dev
 # Menyiapkan template 
 1. bisa download di https://github.com/ColorlibHQ/AdminLTE/releases/tag/v2.4.13
 2. kemudian gunakan helper asset untuk akses bahahan yg di butuhkan
+# menyiapkan feature Autentifikasi
+1. untuk authentifikasi kita gunakan printah php artisan make:auth 
+2. atur env untuk mailtraps
+3. Tambahkan MAIL_FROM_ADDRESS dan MAIL_FROM_NAME di env untuk memberikan alamat email dan name email yang memverifikasi
+4. Tambhakn implements mustVerfy di model USERS
 
 
