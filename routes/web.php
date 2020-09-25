@@ -17,9 +17,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/admin', function () {
-    return 'admin page';
-})->name('admin');
 
 Route::get('/user',function(){
     return view('admin/template/user/index');

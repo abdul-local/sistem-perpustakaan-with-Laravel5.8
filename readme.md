@@ -35,6 +35,14 @@ composer require barryvdh/laravel-debugbar --dev
 5. setalah itu atur untuk Login controller nya artinya tambahkan methd baru,
 ketika di jalankan yang di gunakan untuk redirect ke halaman admin page dan jangan lupa untuk routenya atur ke halaman adminnya biar ketika user login dengan role admin langsung di direct ke page admin
 
+# Membedakan Route Admin_User 
+1. kita buat file admin.php di route
+2. kita pindahkan printah untuk akses admin ke file admin.php
+3. Kita daptarkan route untuk admin di RouteServiceProvider.php
+4. kita buat sperti route di web.php .
+5. jangan lupa untuk menambahkan auth dan role admin biar tidak di akses .
+
+
 
 
 
