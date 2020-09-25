@@ -20,5 +20,14 @@ composer require barryvdh/laravel-debugbar --dev
 2. atur env untuk mailtraps
 3. Tambahkan MAIL_FROM_ADDRESS dan MAIL_FROM_NAME di env untuk memberikan alamat email dan name email yang memverifikasi
 4. Tambhakn implements mustVerfy di model USERS
+# Memberikan Role untuk user terdaptar
+1. gunakan printah php artisan make:seeder RolesTableSeeder
+2. Setelah itu gunakan printah php artisan db:seed
+3. setelah itu buat untuk seeder user dan admin
+4. masuk ke controller untuk register di atur lagi dan sebelum di create datanya di sudahakan di tampung dulu kedalam sebuah varibel
+5. Gunakan printah assignRole
+6. setelah itu tambahkan untuk hashRole nya di Model
+
+
 
 
