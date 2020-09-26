@@ -72,6 +72,13 @@ ketika di jalankan yang di gunakan untuk redirect ke halaman admin page dan jang
 7. setelah kita ceek semua datanya terhapus di database..
 8. setelah itu kita akan menjalakan semua printah yang ada di seeder database dengan printah php artisan db:seed  otomatis akan mengenerate seluruhnya
 
+# Menampilkan data penulis
+1. pertama kunjungi lama github https://github.com/yajra/laravel-datatables
+2. Setelah Itu install di terminal dengan perintah composer require yajra/laravel-datatables-oracle:"~9.0"
+3. copy untuk link pengambilan tamplate tabel dan js nya lalu taruh di head nya
+4. Kemudian Buat View untuk Author/penulisnya
+5. Buat Controller untuk Author dengan melakukan printah php artisan make:controller Admin\\AuthorController --resource
+6. setealh itu buatkan sebuah Route nya di rout view api.php
 
 
 
