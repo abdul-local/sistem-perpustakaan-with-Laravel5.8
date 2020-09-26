@@ -42,6 +42,10 @@ ketika di jalankan yang di gunakan untuk redirect ke halaman admin page dan jang
 4. kita buat sperti route di web.php .
 5. jangan lupa untuk menambahkan auth dan role admin biar tidak di akses .
 
+# Menyiapkan Halaman Admin
+1. kita buat buat halaman admin sesui dengan kebutuhan
+2. untuk admin kita buatkan kontroller tersendiri untuk mempermudahnya dengan malkukan printah php artisan make:controller Admin\\HomeController
+
 
 
 
