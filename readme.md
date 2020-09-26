@@ -80,7 +80,13 @@ ketika di jalankan yang di gunakan untuk redirect ke halaman admin page dan jang
 5. Buat Controller untuk Author dengan melakukan printah php artisan make:controller Admin\\AuthorController --resource
 6. setealh itu buatkan sebuah Route nya di rout view api.php
 
-
+# Menampilkan dataPenulis Implmentasi Dengan Laravel Data Table
+1. Membuat Controller khusus untuk Menampilkan data json dari database dengan printah di langkah no 2
+2. php artisan make:controller DataController
+3. setelah itu buat method dengan nama authors dan buat pritah untuk mengambil data dari database dalam bentuk json dengan printah di langkah no 4
+4. return datatables()->of(Author::query())->toJson(); 
+5. jangan lupa untuk di view index di panggil sebuah printah @stack('scripts') yang berfungsi untuk menyediakan tempat untuk ja4vascrript
+6. setelah itu panggil printah @push('scripts) dan buat fungsi untuk menampilkan datatable yang ada di database dan jangan lupa @endpush
 
 
 
