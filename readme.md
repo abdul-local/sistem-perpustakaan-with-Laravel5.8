@@ -89,4 +89,8 @@ ketika di jalankan yang di gunakan untuk redirect ke halaman admin page dan jang
 6. setelah itu panggil printah @push('scripts) dan buat fungsi untuk menampilkan datatable yang ada di database dan jangan lupa @endpush
 
 
-
+# Membuat Fungsi Tambah 
+1. edit di menu authour tambahka a href tuntuk tambah.
+2. buat view untuk create yang ada formnya
+3. tambhkan di model public $guarded=[],
+4. Tambahka di method strore create($request->only->name())
