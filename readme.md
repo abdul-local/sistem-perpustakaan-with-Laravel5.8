@@ -62,6 +62,17 @@ ketika di jalankan yang di gunakan untuk redirect ke halaman admin page dan jang
 4. kita gunakan printah php tinker
 5. jalankan prinah factory(App\Book::class,20)->create();
 
+# Menyingkat Generate Data
+1. kita harus buat untuk seedernya dengan melakukan printah php artisan make:seeder AuthorsTableSeeder
+2. di method run nya kita buat kita buat fungsi untuk faker data sebanyak 10 dengan menambah script  factory(App\Author::class,10)->create();
+3. kita buat untuk seeder Book dengan melukan printah php artisan make seeder BooksTableSeeder
+4. di method run nya kita buat kita buat fungsi untuk faker data sebanyak 10 dengan menambah script  factory(App\Book::class,20)->create();
+5. setalh itu kita daptarkan seedernya di Database Seeder di method run kita panggil kelasnya dengan script $this->call(BooksTableSeeder::class);
+6. ini baru kita ulang hapus semua datanya dengan melakukan printah php artisan migarte:fresh
+7. setelah kita ceek semua datanya terhapus di database..
+8. setelah itu kita akan menjalakan semua printah yang ada di seeder database dengan printah php artisan db:seed  otomatis akan mengenerate seluruhnya
+
+
 
 
 
