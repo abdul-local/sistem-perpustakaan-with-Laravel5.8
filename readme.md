@@ -55,6 +55,13 @@ ketika di jalankan yang di gunakan untuk redirect ke halaman admin page dan jang
 6. setelah itu kita jalakan printah php artisan tinker
 7. kemudian jalankan printah lagi factory(App\Author::class.10)->create();
 
+# Membuat data Buku
+1. kita buat factory buku dan Model Buku dengan melakukan printah di langkah ke 2
+2. php artisan make:model Book -f printah ini akan membuat model sekaligus factory
+3. kita buat factory yang di Book dengan melihat apa saja yang di butuhkan di dataasenya.
+4. kita gunakan printah php tinker
+5. jalankan prinah factory(App\Book::class,20)->create();
+
 
 
 
