@@ -46,6 +46,15 @@ ketika di jalankan yang di gunakan untuk redirect ke halaman admin page dan jang
 1. kita buat buat halaman admin sesui dengan kebutuhan
 2. untuk admin kita buatkan kontroller tersendiri untuk mempermudahnya dengan malkukan printah php artisan make:controller Admin\\HomeController
 
+# Membuat Data Author
+1. untuk membuat data Author secara otomatis kita dapat gunakan facker dengan melakukan printah no 2
+2. php artisan make:factory AuthorFactory --model=Author
+3. kita bisa membuat modelnya dengan melakukan printah php artisan make:model Author
+4. liat data untuk Author di database apa saja yang dibutuhkan
+5. kita matikan dulu di model Author untuk public $timestamps = false;
+6. setelah itu kita jalakan printah php artisan tinker
+7. kemudian jalankan printah lagi factory(App\Author::class.10)->create();
+
 
 
 
