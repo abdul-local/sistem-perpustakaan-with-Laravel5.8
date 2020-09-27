@@ -124,4 +124,11 @@ jangan lupa kunjungi (kunjungi https://yajrabox.com/docs/laravel-datatables/mast
 2. tambahakan notifikasi di js di view alert 
 3. Tambhkan juga di scripts untuk js nya di view index
 
+# Judul Halaman dinamis_BreadCrums
+1. tambahkan $title di view head dan jangan lupa di author controller juga di ubah di tambhakan index title dan nilainya
+2. kunjungi laman https://github.com/davejamesmiller/laravel-breadcrumbs dan lakukan pengistallan di terminal dengan perintah composer require davejamesmiller/laravel-breadcrumbs:5.x
+3. Tambahakan di view defauult {{ Breadcrumbs::render() }} untuk mencetak outputnya 
+4. tambahkan route untuk breadcrumns juga
+5. liat documentasi di link githubnya
+6. 
 
