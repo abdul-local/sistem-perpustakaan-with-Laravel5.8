@@ -8,10 +8,15 @@
         <form action="{{route('admin/author/update',$author)}}" method="POST">
                 @csrf
                 @method('PUT')
-                <div class="form-group">
+                <div class="form-group @error('name') has-error
+                    
+                @enderror">
                     <label for="">Nama</label>
-                <input type="text" name="name" class="form-control" value="{{$author->name}}" placeholder="Masukan Nama Penulis">
+                <input type="text" name="name" class="form-control" value="{{old('name') ?? $author->name}}" placeholder="Masukan Nama Penulis">
                 </div>
+                @error('name')
+            <span class="help-block">{{$message}}</span>
+                @enderror
                 <div class="form-group">
                     <input type="submit"  value="Ubah" class="btn btn-primary">
                 </div>

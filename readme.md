@@ -131,4 +131,9 @@ jangan lupa kunjungi (kunjungi https://yajrabox.com/docs/laravel-datatables/mast
 4. tambahkan route untuk breadcrumns juga
 5. liat documentasi di link githubnya
 6. 
-
+# Menambahkan Validasi Pada Form
+1. ubah di authorcontroller dan tambhakan validate untuk namenya.
+2. agar mempermudah user kita bisa tambahkan untuk pesan errornya di view create dengan method @error dan kelas hash-error
+3. jangan lupa di controller untuk tambah data di validate di tambhakan minimal data yang boleh di tulis dab juga tambahakan di view index nya
+untuk value gunkan old supaya ketika user nulis 
+4. jangan lupa untuk controller di edit juga sama dan perbaiki juga di view edit tambhakan untuk menampilkan error

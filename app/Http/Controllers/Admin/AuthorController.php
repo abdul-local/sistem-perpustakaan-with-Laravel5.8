@@ -38,6 +38,9 @@ class AuthorController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'name'=>'required|min:3'
+        ]);
         Author::create($request->only('name'));
         return redirect()->route('admin/author')->with('success','Data berhasil ditambahkan',[
             'title'=>'Tambah Penulis'
@@ -65,6 +68,7 @@ class AuthorController extends Controller
     public function edit(Request $request, Author $author)
     {
         //
+      
         return view('admin/author/edit',[
             'title'=>'Edit Penulis',
             'author'=>$author,
@@ -80,6 +84,9 @@ class AuthorController extends Controller
      */
     public function update(Request $request, Author $author)
     {
+        $request->validate([
+            'name'=>'required|min:3'
+        ]);
         $author->update($request->only('name'));
         return redirect()->route('admin/author')->with('info','Data berhasil diubah');
     }
