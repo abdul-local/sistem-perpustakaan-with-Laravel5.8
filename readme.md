@@ -109,5 +109,9 @@ jangan lupa kunjungi (kunjungi https://yajrabox.com/docs/laravel-datatables/mast
 2. buat view untuk action yang berfungsi untuk menampilkan button edit dan delete
 3. kita buat di view action untuk form untuk hapus data kita gunakan untuk mentrigger form yang kita buat di index
 4. 
+# Menambah dialog sebelum hapus data
+1. kunjungi situs penyedia sweatalert https://sweetalert2.github.io/#download
+2. copy script <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> ke view action
+3. 
 
 
