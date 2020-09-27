@@ -94,3 +94,11 @@ ketika di jalankan yang di gunakan untuk redirect ke halaman admin page dan jang
 2. buat view untuk create yang ada formnya
 3. tambhkan di model public $guarded=[],
 4. Tambahka di method strore create($request->only->name())
+
+# Membuat Fungsi Edit
+jangan lupa kunjungi (kunjungi https://yajrabox.com/docs/laravel-datatables/master/add-column untuk documentasi) untuk documentasi
+1. Jangan lupa di view index untuk author kita atur colum penomeranya dengan menggunakan DT_rows_index dan jang lupa data controllernya tambahka addColumn
+2. dan juga untuk orderable:false dan search able kita false
+3. kita tambahkan untuk di controller data Column yang kita berinama action dengan function untuk mengembalikan nilai berpa tombol edit 
+4. kita buat view untuk edit dengan form yang sama dengan tambah data penulis
+5. kita buat route di api untuk method PUT
