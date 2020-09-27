@@ -37,7 +37,7 @@ class AuthorController extends Controller
     public function store(Request $request)
     {
         Author::create($request->only('name'));
-        return redirect()->route('admin/author');
+        return redirect()->route('admin/author')->with('success','Data berhasil ditambahkan');
 
     }
 
@@ -76,7 +76,7 @@ class AuthorController extends Controller
     public function update(Request $request, Author $author)
     {
         $author->update($request->only('name'));
-        return redirect()->route('admin/author');
+        return redirect()->route('admin/author')->with('info','Data berhasil diubah');
     }
 
     /**
@@ -89,6 +89,6 @@ class AuthorController extends Controller
     {
         //
         $author->delete();
-        return redirect()->route('admin/author');
+        return redirect()->route('admin/author')->with('danger','Data berhasil dihapus');
     }
 }

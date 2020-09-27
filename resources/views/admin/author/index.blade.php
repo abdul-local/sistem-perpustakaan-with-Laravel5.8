@@ -6,6 +6,7 @@
     <a href="{{route('admin/author/create')}}" class="btn btn-primary">Tambah Penulis</a>
       </div>
     <div class="box-body">
+      
         <table id="dataTables" class="table table-bordered table-hover">
             <thead>
             <tr>
@@ -26,7 +27,8 @@
 @endsection
 
 @push('scripts')
-
+<script src="{{asset('assets/plugins/bs-notify.min.js')}}"> </script>
+@include('admin/template/partials/alert')
 <script>
     $(function(){
         $('#dataTables').DataTable({

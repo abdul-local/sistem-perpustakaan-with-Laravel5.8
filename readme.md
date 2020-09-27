@@ -114,4 +114,14 @@ jangan lupa kunjungi (kunjungi https://yajrabox.com/docs/laravel-datatables/mast
 2. copy script <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> ke view action
 3. 
 
+# Menambahkan flash Messegae
+1. di setiap Author controller kita tambahkan with('success','Tambah tulisan ')
+2. di index kita tambahakan kondisi jika alert sucess maka tambahakan pesan..
+3. di method delet dan update pun kita tambahkan  fungsi yang sama, 
+
+# Mengganti alert dengan Bootesraf Notif 
+1. kunjungi laman http://bootstrap-notify.remabledesigns.com/
+2. tambahakan notifikasi di js di view alert 
+3. Tambhkan juga di scripts untuk js nya di view index
+
 
