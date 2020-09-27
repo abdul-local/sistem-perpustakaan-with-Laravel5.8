@@ -101,4 +101,13 @@ jangan lupa kunjungi (kunjungi https://yajrabox.com/docs/laravel-datatables/mast
 2. dan juga untuk orderable:false dan search able kita false
 3. kita tambahkan untuk di controller data Column yang kita berinama action dengan function untuk mengembalikan nilai berpa tombol edit 
 4. kita buat view untuk edit dengan form yang sama dengan tambah data penulis
-5. kita buat route di api untuk method PUT
+5. kita buat route di admin untuk method PUT
+6. kita buat juga di authorController untuk method update yang berfungsi untuk merubah data hanya namanya saja.
+
+# Membuat Fungsi delete
+1. Update lagi method untuk datacontrollernya pisahkan untuk action arahkan ke view yang nanti kita buat
+2. buat view untuk action yang berfungsi untuk menampilkan button edit dan delete
+3. kita buat di view action untuk form untuk hapus data kita gunakan untuk mentrigger form yang kita buat di index
+4. 
+
+
