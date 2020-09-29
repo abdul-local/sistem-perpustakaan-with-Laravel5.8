@@ -137,3 +137,14 @@ jangan lupa kunjungi (kunjungi https://yajrabox.com/docs/laravel-datatables/mast
 3. jangan lupa di controller untuk tambah data di validate di tambhakan minimal data yang boleh di tulis dab juga tambahakan di view index nya
 untuk value gunkan old supaya ketika user nulis 
 4. jangan lupa untuk controller di edit juga sama dan perbaiki juga di view edit tambhakan untuk menampilkan error
+
+# Menampilkan Data Modul Buku
+1. sebelum membuat controller untuk data modul buku terlebih dahulu cek dulu untuk databasenya apa aja yang dibutuhkan
+2. nah setelah itu lakuka perintah php artisan make:controller BooksController --resource untuk membuat controllernya
+3. lalu tambahakan method untuk mengambil data dari dtabase di data controller
+4. jangan lupa untuk membuat routenya juga dan juga route breadcrumbs jg.
+5. untuk view juga di buatkan
+6. di datacontroller untuk method books juga jangan lupa dibuatkan editColumn untuk mengmbalikan nilai cover dalam bentuk alamat image
+7. kita tambahakn rawColumns supaya di convert ke dalam bentuk html
+8. tambahakan di dataController untuk column baru untuk menampung name penulis dan juga jangan lupa untuk merelasikan antara Model Books dngan author dengan bantuan function belongsTo
+9. terakhi tambahkan di model Author hasMany untuk author yang banyak.

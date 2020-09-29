@@ -18,3 +18,8 @@ Breadcrumbs::for('admin/author/edit', function ($trail,$author) {
     $trail->push('Beranda', route('admin/dashboard'));
     $trail->push('Edit Penulis', route('admin/author/edit',$author));
 });
+// Book admin
+Breadcrumbs::for('admin/book', function ($trail) {
+    $trail->push('Beranda', route('admin/dashboard'));
+    $trail->push('penulis', route('admin/book'));
+});

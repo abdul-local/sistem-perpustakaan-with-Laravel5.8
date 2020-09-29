@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Author;
 
-class AuthorController extends Controller
+class BookController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +14,9 @@ class AuthorController extends Controller
      */
     public function index()
     {
-        return view('admin/author/index',[
-            'title'=>'Data Penulis'
+        //
+        return view('admin/book/index',[
+            'title'=>'Data Buku'
         ]);
     }
 
@@ -27,9 +27,7 @@ class AuthorController extends Controller
      */
     public function create()
     {
-        return view('admin/author/create',[
-            
-        ]);
+        //
     }
 
     /**
@@ -40,13 +38,7 @@ class AuthorController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'name'=>'required|min:3'
-        ]);
-        Author::create($request->only('name'));
-        return redirect()->route('admin/author')->with('success','Data berhasil ditambahkan',[
-            'title'=>'Tambah Penulis'
-        ]);
+        //
 
     }
 
@@ -67,14 +59,9 @@ class AuthorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Request $request, Author $author)
+    public function edit($id)
     {
         //
-      
-        return view('admin/author/edit',[
-            'title'=>'Edit Penulis',
-            'author'=>$author,
-        ]);
     }
 
     /**
@@ -84,13 +71,9 @@ class AuthorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Author $author)
+    public function update(Request $request, $id)
     {
-        $request->validate([
-            'name'=>'required|min:3'
-        ]);
-        $author->update($request->only('name'));
-        return redirect()->route('admin/author')->with('info','Data berhasil diubah');
+        //
     }
 
     /**
@@ -99,10 +82,8 @@ class AuthorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Author $author)
+    public function destroy($id)
     {
         //
-        $author->delete();
-        return redirect()->route('admin/author')->with('danger','Data berhasil dihapus');
     }
 }
