@@ -154,3 +154,11 @@ untuk value gunkan old supaya ketika user nulis
 3. untuk controller di create ambil data di autthornya kemudian simpan ke dalam index author
 4. tambahkan script js untuk merapikin untuk fornm select 
 5. 
+# Membuat Fungsi Simpan Buku_Menangani Asset Gambar
+1. kita buat di method store untuk validatenya dan kita berikan aturan sesui yang yang di inginkan
+2. kita buat varibel yang menampung data untuk cover dengan nilai null
+3. buat untuk untuk method createnya dan jangan lupa untuk inport model Book
+4. atur untuk tempat penyimpanan data gambarnya nya.. untuk stting di config filesistemnya path nya ganti root nya ke public.
+5. buatkan method baru berinama getCover untuk dan berikan suatu kodisi jika htpps dan cover link juga bedaain.
+6. update lagi codingan di di controller untuk gambar.
+
