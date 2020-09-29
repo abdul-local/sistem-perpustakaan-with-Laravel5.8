@@ -14,7 +14,6 @@
                 @error('name')
                 <span class="help-block">{{$message}}</span>   
                 @enderror
-            
                 <div class="form-group">
                     <input type="submit"  value="Tambah" class="btn btn-primary">
                 </div>

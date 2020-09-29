@@ -21,5 +21,10 @@ Breadcrumbs::for('admin/author/edit', function ($trail,$author) {
 // Book admin
 Breadcrumbs::for('admin/book', function ($trail) {
     $trail->push('Beranda', route('admin/dashboard'));
-    $trail->push('penulis', route('admin/book'));
+    $trail->push('Buku', route('admin/book'));
+});
+// Books add
+Breadcrumbs::for('admin/book/create', function ($trail) {
+    $trail->push('Beranda', route('admin/dashboard'));
+    $trail->push('Tambah Penulis', route('admin/book/create'));
 });

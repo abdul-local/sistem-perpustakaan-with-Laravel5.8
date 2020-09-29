@@ -148,3 +148,9 @@ untuk value gunkan old supaya ketika user nulis
 7. kita tambahakn rawColumns supaya di convert ke dalam bentuk html
 8. tambahakan di dataController untuk column baru untuk menampung name penulis dan juga jangan lupa untuk merelasikan antara Model Books dngan author dengan bantuan function belongsTo
 9. terakhi tambahkan di model Author hasMany untuk author yang banyak.
+# Membuat Form untuk Tambah data buku
+1. cek di databasenya data apa saja yang dibutuhkan
+2. tambahkan enctype="multipart/form-data" untu inputan file
+3. untuk controller di create ambil data di autthornya kemudian simpan ke dalam index author
+4. tambahkan script js untuk merapikin untuk fornm select 
+5. 

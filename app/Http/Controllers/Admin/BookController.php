@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Author;
 
 class BookController extends Controller
 {
@@ -28,6 +29,10 @@ class BookController extends Controller
     public function create()
     {
         //
+        return view('admin/book/create',[
+            'title'=>'Tambah buku',
+            'authors'=>Author::orderBy('name','ASC')->get(),
+        ]);
     }
 
     /**
