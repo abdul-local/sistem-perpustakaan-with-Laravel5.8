@@ -166,3 +166,7 @@ untuk value gunkan old supaya ketika user nulis
 1. di Book controllernya kita lakukan perubahanan dengan mengubah di method editnya
 2. sekarang kita buatkan view edit data jangan lupa untuk tambahkan method PUT
 3. nah sekarang di bookController method updatenya di ubah sesui kebutuhan dan jangan lupa tambahkan breadcrums nya
+
+# Menghapus Data buku
+1. tinggal perbaiki di method delet di controller buku, gunakan method delet
+2. route di sidebarnya juga perbaiki untuk akses buku nya
