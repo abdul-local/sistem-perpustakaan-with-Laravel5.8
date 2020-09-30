@@ -15,7 +15,7 @@
 //     return view('admin/template/default');
 // });
 Route::get('/', function () {
-    return view('welcome');
+    return view('homepage');
 });
 
 Route::get('/user',function(){

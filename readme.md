@@ -174,3 +174,8 @@ untuk value gunkan old supaya ketika user nulis
 # Tips Menangani Aset Project
 1. script yang tidak dibutuhkan bisa dihapus, dan scrip yang hanya di butuhkan di halam itu saja bisa di gunkan @stuck dan @push yang dimana hanya di jalankan di view itu saja.
 2. Untuk data script yang tidak lagi dibutuhkan bisa hapus saja bir ndk di berat suatu website
+
+# Membuat Tampilan Halaman depan
+1. buat view homepage
+2. kunjungi situs https://materializecss.com/ untuk membuat homepage sesui keinginan
+3. untuk routenya jangan lupa di arahkan ke homepage
