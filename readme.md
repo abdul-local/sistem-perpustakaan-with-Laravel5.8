@@ -193,3 +193,12 @@ untuk value gunkan old supaya ketika user nulis
 3. buatkan sebuah variabel yang berfungsi untuk mengambil data di database book semuannya
 4. di view untuk halaman indexnya diatur dan ambil data sesui kebutuhan.
 5. jangan lupa di route Api nya juga di perbaiki untuk di arahkan ke halaman controller books index untuk frontend  nya.
+
+# Membuat Constume Pagination
+1. kita tentuin dulu tampilan berapa halaman yang kita tampilkan dengan method paginate
+2. kita tambhakan links() di paginationnya
+3. kita lakukan perintah untuk membuat link pagination dengan menampilkan sesui yang kita inginkan dengan perintah di lankah selajutanya
+4. lakukan perintah di terminal php artisan vendor:publish lalu kelik no 17 untuk pagination
+5. buat view untuk pagination
+6. lalu terakhir sesuikan dengan pagination yang ingin dibuat
+

@@ -9,7 +9,7 @@ class BookController extends Controller
 {
     // buat method dengan nama index
     public function index(){
-        $books=Book::get();
+        $books=Book::paginate(10);
         return view('frontend/Book/index',[
             'books'=>$books,
         ]);
