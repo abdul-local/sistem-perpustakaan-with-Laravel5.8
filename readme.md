@@ -170,3 +170,7 @@ untuk value gunkan old supaya ketika user nulis
 # Menghapus Data buku
 1. tinggal perbaiki di method delet di controller buku, gunakan method delet
 2. route di sidebarnya juga perbaiki untuk akses buku nya
+
+# Tips Menangani Aset Project
+1. script yang tidak dibutuhkan bisa dihapus, dan scrip yang hanya di butuhkan di halam itu saja bisa di gunkan @stuck dan @push yang dimana hanya di jalankan di view itu saja.
+2. Untuk data script yang tidak lagi dibutuhkan bisa hapus saja bir ndk di berat suatu website
