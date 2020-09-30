@@ -14,9 +14,7 @@
 // Route::get('/', function () {
 //     return view('admin/template/default');
 // });
-Route::get('/', function () {
-    return view('homepage');
-});
+Route::get('/', 'Frontend\\BookController@index');
 
 Route::get('/user',function(){
     return view('admin/template/user/index');

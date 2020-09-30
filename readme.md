@@ -187,3 +187,9 @@ untuk value gunkan old supaya ketika user nulis
 4. buat untuk yeld di default untuk content
 5. buat di hompage untuk extends
 6. tambahkan secions untuk mengisi containernya
+# Menampilkan Data Buku di Halaman Depan
+1. buatkan controller untuk frontend dengan melakukan printah php artisan make:controller Frontend\\Bookcontroller
+2. buatkan sebuah method dengan nama index untuk mengmbalikan sebuah nilai beruapa tambilan
+3. buatkan sebuah variabel yang berfungsi untuk mengambil data di database book semuannya
+4. di view untuk halaman indexnya diatur dan ambil data sesui kebutuhan.
+5. jangan lupa di route Api nya juga di perbaiki untuk di arahkan ke halaman controller books index untuk frontend  nya.
