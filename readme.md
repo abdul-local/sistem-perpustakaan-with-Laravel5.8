@@ -179,3 +179,11 @@ untuk value gunkan old supaya ketika user nulis
 1. buat view homepage
 2. kunjungi situs https://materializecss.com/ untuk membuat homepage sesui keinginan
 3. untuk routenya jangan lupa di arahkan ke homepage
+
+# Membuat Template Halaman utama 
+1. buatkan sebuah folder dengan nama frontend dan templates
+2. kemudian buat view dengan nama default
+3. buat sebuah folder dengan nama partials dan kemudian buat view untuk head,navbar,dan scripts, lalu di view default include view yang dipecah2 tersebut.
+4. buat untuk yeld di default untuk content
+5. buat di hompage untuk extends
+6. tambahkan secions untuk mengisi containernya
