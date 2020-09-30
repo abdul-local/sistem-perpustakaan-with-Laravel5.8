@@ -28,3 +28,8 @@ Breadcrumbs::for('admin/book/create', function ($trail) {
     $trail->push('Beranda', route('admin/dashboard'));
     $trail->push('Tambah Penulis', route('admin/book/create'));
 });
+// Book Edit
+Breadcrumbs::for('admin/book/edit', function ($trail,$book) {
+    $trail->push('Beranda', route('admin/dashboard'));
+    $trail->push('Edit buku', route('admin/book/edit',$book));
+});

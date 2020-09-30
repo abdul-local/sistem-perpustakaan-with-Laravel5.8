@@ -162,3 +162,7 @@ untuk value gunkan old supaya ketika user nulis
 5. buatkan method baru berinama getCover untuk dan berikan suatu kodisi jika htpps dan cover link juga bedaain.
 6. update lagi codingan di di controller untuk gambar.
 
+# Membuat Fungsi Update Buku
+1. di Book controllernya kita lakukan perubahanan dengan mengubah di method editnya
+2. sekarang kita buatkan view edit data jangan lupa untuk tambahkan method PUT
+3. nah sekarang di bookController method updatenya di ubah sesui kebutuhan dan jangan lupa tambahkan breadcrums nya
