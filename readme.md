@@ -211,3 +211,9 @@ untuk value gunkan old supaya ketika user nulis
 # Menyesuikan Tampilan Login
 1. tinggal copas saja di menu register yang sudah di buat dan sesuikan dengan kebuhan yanh di ambil
 2. dan jangan lupa routenya arahkan ke login
+
+# Membuat Halaman Detail Buku
+1. tambahkan method show dimana di method ini kita arahkan ke halaman detail
+2. buat view detail sesuikan sama kebutuhan
+3. dan jangan lupa untuk routenya diperbaiki dengan melibatkan paramter
+4. 

@@ -14,4 +14,11 @@ class BookController extends Controller
             'books'=>$books,
         ]);
     }
+    // buat method show
+    public function show(Book $book){
+        return view('frontend/Book/show',[
+            'title'=>'Detail Buku',
+            'book'=>$book,
+        ]);
+    }
 }
