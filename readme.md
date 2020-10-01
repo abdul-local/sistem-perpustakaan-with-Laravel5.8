@@ -202,3 +202,8 @@ untuk value gunkan old supaya ketika user nulis
 5. buat view untuk pagination
 6. lalu terakhir sesuikan dengan pagination yang ingin dibuat
 
+# Menyesuikan Tampilan Register
+1. masuk ke auth dan menuju ke halaman resgister
+2. hapus smua di view register dan kemudian edit di view sesui kebutuhan
+3. jangan lupa extends untuk menu default dan tambahkan sescion content
+4. 
