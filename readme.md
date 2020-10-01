@@ -217,3 +217,8 @@ untuk value gunkan old supaya ketika user nulis
 2. buat view detail sesuikan sama kebutuhan
 3. dan jangan lupa untuk routenya diperbaiki dengan melibatkan paramter
 4. 
+# Membuat Section Buku Lainnya Dari Penulis
+1. tambahak  di bawah view show
+2. coba lakukan dd untuk akses books
+3. tampilkan sesui buku yang di inginkan 
+4. 
