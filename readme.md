@@ -207,3 +207,7 @@ untuk value gunkan old supaya ketika user nulis
 2. hapus smua di view register dan kemudian edit di view sesui kebutuhan
 3. jangan lupa extends untuk menu default dan tambahkan sescion content
 4. 
+
+# Menyesuikan Tampilan Login
+1. tinggal copas saja di menu register yang sudah di buat dan sesuikan dengan kebuhan yanh di ambil
+2. dan jangan lupa routenya arahkan ke login
