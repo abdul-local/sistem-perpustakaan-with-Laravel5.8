@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Frontend;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Book;
+use App\BorrowHistory;
+
 class BookController extends Controller
 {
     // buat method dengan nama index
@@ -20,5 +22,15 @@ class BookController extends Controller
             'title'=>'Detail Buku',
             'book'=>$book,
         ]);
+    }
+    // buat method borrow
+    public function borrow(Book $book){
+        // dd($book);
+        BorrowHistory::create([
+            'user_id'=>auth()->id(),
+            'book_id'=>$book->id,
+
+        ]);
+        return 'success nambah data';
     }
 }

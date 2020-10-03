@@ -222,3 +222,13 @@ untuk value gunkan old supaya ketika user nulis
 2. coba lakukan dd untuk akses books
 3. tampilkan sesui buku yang di inginkan 
 4. 
+
+# Membuat Fungsi pinjam buku
+1. untuk view di pinjam buku ganti dengan action form
+2. jangan lupa buatkan route dan lewatkan sebuah parameter
+3. buatkan sebuah controller khusus unntuk pinjam buku
+4. jangan lupa di routenya tambhakan middlware untuk memproteknya
+5. buat model dengan nama BorrowHistory dengan melakukan printah php artisan make:model BorrowHistory
+6. jangan lupa cek structur data history apa saja yang dibutuhkan
+7. dan tambahakn function create di method borrow dan lalu cek datanya apakah sudah terkirim.
+
