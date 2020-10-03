@@ -235,3 +235,9 @@ untuk value gunkan old supaya ketika user nulis
 1. tambahkan di model Book method yang merelasikan antara Model Book dengan User dengan bantuan fungsi belongsTomany
 2. lalu update lagi kodingan di method borrow dengan menambhakan method yang sudah di relationshio
 3. kembalikan ke redirect awal lagi
+# Menyempurnakan Proses Peminjaman Buku
+1. Langkah pertama ya masuk ke webnya https://materializecss.com/toasts.html
+2. buatkan di partials view baru dengan kasih kondisian dan di selipkan di script
+3. kita berikan sebuah aturan apbila peminjaman buku bermasil maka qty nya berkurang dengan bantuan method decrement berdasarkan paramter qty
+4. kita atur lagi untuk membatasi jumlah book_id apabila hasil penjumlahannya lebih dari 1 maka redirect ke kondisi awal
+5. 
