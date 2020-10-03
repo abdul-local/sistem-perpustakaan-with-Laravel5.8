@@ -253,3 +253,8 @@ di akhiri dengan @endguest
 2. ubah di Homecontrooler dapatkan file dari relationsip lalu simpan kedalam variabel berinama books
 3. kembalikan nilai di return view dengan variavel books yang menyimpan data yg sudah di relasikan
 4. dan janganlupa tambahkan untuk link home di nabar
+# Membuat Komponen card Buku
+1. buat sebuah folder dengan nama components dan view dengan nama card-book
+2. pindahkan codingan yang ada di halaman yang menampilkan buku di card-book supaya mudah di perbaiki
+3. jangan lupa include dan pasing parameternya
+4. 
