@@ -1,6 +1,7 @@
 <?php
 
 namespace App;
+use App\Book;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -37,4 +38,9 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // method dengan nama borrowed
+    public function borrowed(){
+        return $this->belongsToMany(Book::class,'borrow_history');
+    }
 }

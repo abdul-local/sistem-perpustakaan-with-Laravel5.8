@@ -5,7 +5,9 @@ namespace App\Http\Controllers\Frontend;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Book;
+use App\User;
 use App\BorrowHistory;
+
 
 class BookController extends Controller
 {
@@ -25,12 +27,10 @@ class BookController extends Controller
     }
     // buat method borrow
     public function borrow(Book $book){
-        // dd($book);
-        BorrowHistory::create([
-            'user_id'=>auth()->id(),
-            'book_id'=>$book->id,
+        
+        $user=auth()->user();
+        $user->borrowed()->attach($book);
 
-        ]);
-        return 'success nambah data';
+        return redirect()->back();
     }
 }

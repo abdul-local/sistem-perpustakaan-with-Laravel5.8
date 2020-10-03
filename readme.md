@@ -231,4 +231,7 @@ untuk value gunkan old supaya ketika user nulis
 5. buat model dengan nama BorrowHistory dengan melakukan printah php artisan make:model BorrowHistory
 6. jangan lupa cek structur data history apa saja yang dibutuhkan
 7. dan tambahakn function create di method borrow dan lalu cek datanya apakah sudah terkirim.
-
+# Fungsi Pinjam Buku dengan Eloquent Relationship
+1. tambahkan di model Book method yang merelasikan antara Model Book dengan User dengan bantuan fungsi belongsTomany
+2. lalu update lagi kodingan di method borrow dengan menambhakan method yang sudah di relationshio
+3. kembalikan ke redirect awal lagi

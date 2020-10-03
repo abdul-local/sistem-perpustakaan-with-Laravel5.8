@@ -1,6 +1,7 @@
 <?php
 
 namespace App;
+use App\User;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -19,5 +20,10 @@ class Book extends Model
             return asset($this->cover);
         }
         return 'https://via.placeholder.com/150x200.png';
+    }
+    // buat method borrow
+    public function borrowed(){
+
+       return $this->belongsToMany(User::class,'borrow_history');
     }
 }
