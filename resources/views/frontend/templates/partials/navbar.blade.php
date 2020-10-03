@@ -9,6 +9,7 @@
           <li><a href="{{route('register')}}">Register</a></li>
           @else 
           <ul id="dropdown1" class="dropdown-content">
+          <li><a href="{{route('home')}}">Home</a></li>
             <li><a  href="{{ route('logout') }}"
               onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();"> Logout</a></li>
@@ -28,6 +29,7 @@
     <li><a href="{{route('login')}}">Login</a></li>
     <li><a href="{{route('register')}}">Register</a></li>
     @else 
+    <li><a href="{{route('home')}}">Home</a></li>
     <li><a  href="{{ route('logout') }}"
       onclick="event.preventDefault();
       document.getElementById('logout-form').submit();"> Logout</a></li>

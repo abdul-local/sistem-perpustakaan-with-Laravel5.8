@@ -247,3 +247,9 @@ di akhiri dengan @endguest
 2. tambhakan @else untuk menampilkan nama dengan logut dan nama yang sudah login
 3. untuk mengaktifkan logout bisa mengecek documentasi view layoutnya
 4. dan janganlupa untuk kelasnya bisa menggunakan dropdown
+
+# Menampilkan Daftar Buku yang sedang diPinjam
+1. ubah di view home, tampilkann sesui kebutuhan
+2. ubah di Homecontrooler dapatkan file dari relationsip lalu simpan kedalam variabel berinama books
+3. kembalikan nilai di return view dengan variavel books yang menyimpan data yg sudah di relasikan
+4. dan janganlupa tambahkan untuk link home di nabar
