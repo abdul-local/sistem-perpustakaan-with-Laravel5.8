@@ -241,3 +241,9 @@ untuk value gunkan old supaya ketika user nulis
 3. kita berikan sebuah aturan apbila peminjaman buku bermasil maka qty nya berkurang dengan bantuan method decrement berdasarkan paramter qty
 4. kita atur lagi untuk membatasi jumlah book_id apabila hasil penjumlahannya lebih dari 1 maka redirect ke kondisi awal
 5. 
+# Membenahi Navigasi Relasi User dan Buku
+1. Langkah 1 yaitu kita sebunyikan tulisan login dan register ketika sudah login dengan bantuan @guest dan 
+di akhiri dengan @endguest
+2. tambhakan @else untuk menampilkan nama dengan logut dan nama yang sudah login
+3. untuk mengaktifkan logout bisa mengecek documentasi view layoutnya
+4. dan janganlupa untuk kelasnya bisa menggunakan dropdown
