@@ -281,3 +281,8 @@ di akhiri dengan @endguest
 8. gunkan update lalu berikan index dan nilainya sesui yang diinginkan, lalu redirect dengan session
 9. jangan lupa tambhakan routenya yang mengarah ke method returnbook
 10. dan juga edit view index di borrow dengan method PUT dan di actionnya juga di edit di sesuikan sama kebutuhan.
+
+# Menampilkan Hanya Buku yang sedang dipinjam
+1. lahkah pertama bisa kita gunkan filter ajadi controllernya dengan bantuan where, tapi untuk lebih baiknya bisa kita buatkan scope di model Histrorynya
+2. buatkan method scope dengan kita lewatkan parameternya dengan memfilter returned_at dengan nilai yang diberikan null
+3. kita panggil di constroller scope yang sudah kita buat.

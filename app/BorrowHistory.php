@@ -20,4 +20,9 @@ class BorrowHistory extends Model
     public function admin(){
         $this->belongsTo(User::class,'id','admin_id');
     }
+
+    // bauatkan method scope dengan nama isborrowed
+    public function scopeIsBorrowed($query){
+        $query->where('returned_at',null);
+    }
 }

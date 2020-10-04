@@ -10,7 +10,9 @@ class BorrowController extends Controller
 {
     // buat method index
     public function index(){
-        return view('admin/borrow/index');
+        return view('admin/borrow/index',[
+            'title'=>'Data buku yang sedang dipinjam'
+        ]);
 
     }
     // buat method return book
