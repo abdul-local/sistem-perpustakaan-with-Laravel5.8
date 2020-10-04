@@ -289,3 +289,8 @@ di akhiri dengan @endguest
 # Judul Halaman Dinamis untuk Frontend
 1. pertama perbaiki di view template partial headdnya,tambahkan varibael di titilnya
 2. tambahakan parameter di controllernya juga untuk title
+
+# Menangani masalah n+1
+1. biasanya terjadi di relasi ,caranya update relasinya di controller sesuikan dengan menambhakan loader
+2. liat juga di query datanya di debuggernya
+3. 
