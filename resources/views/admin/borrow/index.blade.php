@@ -3,7 +3,6 @@
 <div class="box">
     <div class="box-header">
         <h3 class="box-title">Data Peminjaman Buku</h3>
-    <a href="{{route('admin/author/create')}}" class="btn btn-primary">Tambah Penulis</a>
       </div>
     <div class="box-body">
       
@@ -18,10 +17,10 @@
           </table>
     </div>
 </div>
-<form action="" method="post" id="deleteForm">
+<form action="" method="post" id="returnForm">
     @csrf
-   @method("DELETE")
-   <input type="submit" value="Hapus" style="display: none"> 
+   @method("PUT")
+   <input type="submit" value="Kembalikan" style="display: none"> 
 
 </form>
 

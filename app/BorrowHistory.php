@@ -16,4 +16,8 @@ class BorrowHistory extends Model
     public function book(){
         return $this->belongsTo(Book::class);
     }
+    // buat method untuk merelasikan dengan admin id
+    public function admin(){
+        $this->belongsTo(User::class,'id','admin_id');
+    }
 }

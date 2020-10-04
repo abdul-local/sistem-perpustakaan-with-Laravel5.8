@@ -269,3 +269,15 @@ di akhiri dengan @endguest
 7. lalu tambahkan method borrow di data controller dan juga tambhakan columns sesui yang dibutuhkankan.
 8. jangan lupa ambil datanya dari modelnya di buat yaitu BorrowHistory
 9.
+
+# Fungsi Pengembalian Buku
+1. edit di view untuk index dan sesuikan tampilanya
+2. tambahkan colom di databse di borrow_history dengan nama returned_at dan receiver_user dengan perintah no 3
+3. php artisan make:migartion add_returned_at_and_receiver_user_id_on_borrow_history_table --table=borrow_history
+4. lalu tabhakan juga table untuk dateTime dan big integer dengan nama returned_at dan admin_id dengan nilai nullable()-> default(null).
+5. tambhakan juga untuk menghapus kolomnya di function down lalu lakukan printah php artisan make migarate
+6. lalu di model BorowHistory di tambhakan relasi untuk usernya
+7. tambhakan method di BorrowController dengan nama returnbook dan tambhakan paramter darai request dan dari model hsitory
+8. gunkan update lalu berikan index dan nilainya sesui yang diinginkan, lalu redirect dengan session
+9. jangan lupa tambhakan routenya yang mengarah ke method returnbook
+10. dan juga edit view index di borrow dengan method PUT dan di actionnya juga di edit di sesuikan sama kebutuhan.

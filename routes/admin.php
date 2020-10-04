@@ -30,6 +30,8 @@ Route::post('/book','BookController@store')->name('book/store');
 
 Route::get('/borrow','BorrowController@index')->name('borrow');
 
+Route::put('/borrow/{borrowHistory}/return','BorrowController@returnbook')->name('borrow/return');
+
 Route::get('/author/data','DataController@Authors')->name('author/data');
 
 Route::get('/book/data','DataController@Books')->name('book/data');
