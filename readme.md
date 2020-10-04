@@ -299,3 +299,10 @@ di akhiri dengan @endguest
 1. update di Bookcontrollr, tambahkan increment setelah berhasil melakukan update pada saat peninjaman buku
 2. manfaatkan relasi histroybook dengan book
 3. 
+
+# Fix Bug pada Pengencekan Buku Dipinjam
+1. karena di peminjamanya terjadi masalah ketika bukunya sudah dipinjam tidak bisa dikembalikan lagi kita dapat memfilternya dengan menambahkan yang di langkah no 2
+2. where('returned_at',null) yg di selipkan di peminjaman
+3. karena terkesan codingannya yang kurang baik alakangkah lebih baiknya lagi di pindah di model book dan dibuatkan scope method
+4. di scopemethod dimana mengembalikan nilai yang sudah di fileter saja.
+5. 
