@@ -318,3 +318,12 @@ di akhiri dengan @endguest
 2. buat method dengan nama topuser dan jangan lupa untuk model User di inport
 3. gunakan secript seperti method di topbook dan juga jangan lupa untuk membuat routenya juga
 4. 
+
+# Penomoran Data Diluar
+1. yaitu tambhakan untuk codingan php , atur sesui tampilan dan buat variabel $page dan $no =1
+2. manfaatkan kondisi if(request()->has('page')){
+    $page=request('page');
+    $no=(10*$page)-(10-1);
+}
+3. jangan lupa untuk sidebarnya juga di update sesui yang dibutuhkan
+4. 

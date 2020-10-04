@@ -15,9 +15,16 @@
               <th>Jumlah Peminjaman</th>
               <th>Bergabung</th>
             </thead>
+            @php
+                $page=1;
+                if(request()->has('page')){
+                    $page=request('page');
+                }
+                $no=(10*$page)-(10-1);
+            @endphp
             @foreach ($users as $user)
             <tbody>  
-            <th></th>
+            <th>{{$no ++}}</th>
             <th>{{$user->name}}</th>
             <th>{{$user->email}}</th>
             <th>{{$user->borrowed_count}}</th>

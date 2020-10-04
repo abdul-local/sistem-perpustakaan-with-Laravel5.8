@@ -17,10 +17,17 @@
               <th>Penulis</th>
               <th>Sampul</th>
             </thead>
+            @php
+                $page=1;
+                if(request()->has('page')){
+                    $page=request('page');
+                }
+                $no=(10*$page)-(10-1);
+            @endphp
             @foreach ($books as $book)
             <tbody>
                
-            <th></th>
+            <th>{{$no ++}}</th>
             <th>{{$book->title}}</th>
             <th>{{$book->description}}</th>
             <th>{{$book->qty}}</th>
