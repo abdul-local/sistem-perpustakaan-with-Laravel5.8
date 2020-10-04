@@ -44,3 +44,8 @@ Breadcrumbs::for('admin/report', function ($trail) {
     $trail->push('Beranda', route('admin/dashboard'));
     $trail->push('Report', route('admin/report'));
 });
+
+Breadcrumbs::for('admin/topuser', function ($trail) {
+    $trail->push('Beranda', route('admin/dashboard'));
+    $trail->push('Topuser', route('admin/topuser'));
+});

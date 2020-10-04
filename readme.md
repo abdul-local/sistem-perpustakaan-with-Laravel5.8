@@ -312,3 +312,9 @@ di akhiri dengan @endguest
 3. buatkan routing yang mengarah ke controller dan juga breadcrumbs
 4. update di controller dengan nemanbhakan withCount , paginate dan orderBy('borrowed_count')
 5. dan jangan lupa untuk menambhakankan links untuk paginatenya di view
+
+# Membuat Halaman Laporan User Teraktif
+1. yaitu buat viw dengan nama topuser  dan sesuikan ddengan yang ingin ditampilkan
+2. buat method dengan nama topuser dan jangan lupa untuk model User di inport
+3. gunakan secript seperti method di topbook dan juga jangan lupa untuk membuat routenya juga
+4. 
