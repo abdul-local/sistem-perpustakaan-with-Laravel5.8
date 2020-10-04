@@ -15,13 +15,14 @@ class BookController extends Controller
     public function index(){
         $books=Book::paginate(10);
         return view('frontend/Book/index',[
+           
             'books'=>$books,
         ]);
     }
     // buat method show
     public function show(Book $book){
         return view('frontend/Book/show',[
-            'title'=>'Detail Buku',
+            'title'=>$book->title,
             'book'=>$book,
         ]);
     }

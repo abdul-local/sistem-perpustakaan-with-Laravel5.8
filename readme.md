@@ -286,3 +286,6 @@ di akhiri dengan @endguest
 1. lahkah pertama bisa kita gunkan filter ajadi controllernya dengan bantuan where, tapi untuk lebih baiknya bisa kita buatkan scope di model Histrorynya
 2. buatkan method scope dengan kita lewatkan parameternya dengan memfilter returned_at dengan nilai yang diberikan null
 3. kita panggil di constroller scope yang sudah kita buat.
+# Judul Halaman Dinamis untuk Frontend
+1. pertama perbaiki di view template partial headdnya,tambahkan varibael di titilnya
+2. tambahakan parameter di controllernya juga untuk title
