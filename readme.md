@@ -306,3 +306,9 @@ di akhiri dengan @endguest
 3. karena terkesan codingannya yang kurang baik alakangkah lebih baiknya lagi di pindah di model book dan dibuatkan scope method
 4. di scopemethod dimana mengembalikan nilai yang sudah di fileter saja.
 5. 
+# Membuat Halaman Laporan Buku Paling Banyak dipinjam
+1. buat controllernya dengan printah php artisan make controller Admin\\ReportController
+2. buat view untuk nempilkan laporan buku paling banyak dan sesuikan dengan apa yang akan di tampilkan
+3. buatkan routing yang mengarah ke controller dan juga breadcrumbs
+4. update di controller dengan nemanbhakan withCount , paginate dan orderBy('borrowed_count')
+5. dan jangan lupa untuk menambhakankan links untuk paginatenya di view
