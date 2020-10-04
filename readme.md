@@ -258,3 +258,14 @@ di akhiri dengan @endguest
 2. pindahkan codingan yang ada di halaman yang menampilkan buku di card-book supaya mudah di perbaiki
 3. jangan lupa include dan pasing parameternya
 4. 
+
+# Admin Daftar Buku Yang dipinjam
+1. Langkah pertama buat di model BorrowHistory dua method yaitu method book dan user,
+2. setelah itu relasikan keduanya dengan class Book dan User dengan Bantuan belongsTo
+3. buat controller khusus untuk mengarahkan view Daptar Buku yang di pinjam dengan printah di no4
+4. php artisan make:controller Admin\\BorrowController lalu buat method index yang mengarahkan ke halaman view yang sudah dibuat
+5. jangan lupa sebelumnya buatkan route admin untuk Datacontroller dan untuk BorrowController
+6. jangan lupa tambahkan breadcrumbsnya
+7. lalu tambahkan method borrow di data controller dan juga tambhakan columns sesui yang dibutuhkankan.
+8. jangan lupa ambil datanya dari modelnya di buat yaitu BorrowHistory
+9.

@@ -28,10 +28,12 @@ Route::get('/book/create','BookController@create')->name('book/create');
 
 Route::post('/book','BookController@store')->name('book/store');
 
-
+Route::get('/borrow','BorrowController@index')->name('borrow');
 
 Route::get('/author/data','DataController@Authors')->name('author/data');
 
 Route::get('/book/data','DataController@Books')->name('book/data');
+
+Route::get('/borrow/data','DataController@borrow')->name('borrow/data');
 
 // Route::resource('author','AuthorController');

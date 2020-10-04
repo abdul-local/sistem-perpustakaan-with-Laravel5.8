@@ -33,3 +33,8 @@ Breadcrumbs::for('admin/book/edit', function ($trail,$book) {
     $trail->push('Beranda', route('admin/dashboard'));
     $trail->push('Edit buku', route('admin/book/edit',$book));
 });
+// Borrow index
+Breadcrumbs::for('admin/borrow', function ($trail) {
+    $trail->push('Beranda', route('admin/dashboard'));
+    $trail->push('peminjaman', route('admin/borrow'));
+});
