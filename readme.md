@@ -294,3 +294,8 @@ di akhiri dengan @endguest
 1. biasanya terjadi di relasi ,caranya update relasinya di controller sesuikan dengan menambhakan loader
 2. liat juga di query datanya di debuggernya
 3. 
+
+# Menambahkan Kuantitas untuk Buku yag dikembalikan
+1. update di Bookcontrollr, tambahkan increment setelah berhasil melakukan update pada saat peninjaman buku
+2. manfaatkan relasi histroybook dengan book
+3. 

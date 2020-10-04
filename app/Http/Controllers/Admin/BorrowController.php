@@ -21,6 +21,7 @@ class BorrowController extends Controller
             'returned_at'=>Carbon::now(),
             'admin_id'=>auth()->id(),
         ]);
+        $borrowHistory->book()->increment('qty');
         return redirect()->route('admin/borrow')->with('success','Buku berhasil dikembalikan');
 
     }
